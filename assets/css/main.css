@@ -1,0 +1,166 @@
+/* Start general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: 0D0E43;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #006B5F;
+    font-size: 18px;
+}
+
+p {
+    padding-top: 11.11px;
+    color: #8A8FB9;
+}
+
+button {
+    border: 0px;
+    background-color: #006B5F;
+    color: #EEEFFB;
+    font-family: Josefin Sans;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Hidden label for screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+/* End general */
+
+/* Start header section */
+.header {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.header a {
+    color: #3C4A46;
+}
+
+.header a:hover {
+    color: #006B5F;
+}
+
+.header ul {
+    padding-top: 10px;
+    display: flex;
+    gap: 35px;
+    background-color: var(--primary);
+}
+
+.header .search-form {
+    height: 40px;
+    border: 2px solid #E7E6EF;
+    display: flex;
+}
+
+.header input {
+    border: 0px;
+    padding-left: 10px;
+}
+
+.header button {
+    border: 0px;
+    width: 51px;
+    background-color: #006B5F;
+}
+
+.header button i {
+    color: #EEEFFB;
+    font-size: 18px;
+}
+
+.header .cart-icon {
+    width: 24px;
+    height: 24px;
+    padding-top: 10px;
+}
+
+.header .menu {
+    display: none;
+    padding-top: 10px;
+}
+/* End header section */
+
+/* Start media queries */
+@media screen and (min-width:0px) and (max-width:767px) {
+    .header .list,
+    .header .search-form {
+        display: none;
+    }
+
+    .header .cart-icon {
+        padding-top: 5px;
+    }
+
+    .header .menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .header ul {
+        gap: 20px;
+    }
+
+    .header .search-form {
+        display: none;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:400px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header .logo img {
+        width: 150px;
+    }
+
+    .header .cart-icon {
+        padding-top: 0px;
+        width: 11px;
+        height: 11px;
+    }
+}
+/* End media queries */

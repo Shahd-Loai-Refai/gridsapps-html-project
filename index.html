@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PetCare Pharmacy | Home</title>
+    <meta name="description" content="Vet-approved medicines and care products for cats and dogs.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="./assets/images/general/PetCare_logo.svg" alt="PetCare Pharmacy" />
+                </div>
+                <nav class="list">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="medicines.html">Medicines</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search-form" action="shop.html" method="get">
+                    <label for="search" class="visually-hidden">Search products</label>
+                    <input type="text" id="search" name="search" placeholder="Search..." />
+                    <button type="submit" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <a href="cart.html" class="cart-icon">
+                    <img src="./assets/images/general/cart.svg" alt="Cart" />
+                </a>
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
