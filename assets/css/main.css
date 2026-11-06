@@ -57,6 +57,7 @@ button {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
 }
+
 /* End general */
 
 /* Start header section */
@@ -68,9 +69,11 @@ button {
     z-index: 1;
     background-color: white;
 }
-.header .logo{
+
+.header .logo {
     padding-top: 5px;
 }
+
 .header a {
     color: #3C4A46;
 }
@@ -118,6 +121,7 @@ button {
     display: none;
     padding-top: 10px;
 }
+
 /* End header section */
 /* Start hero section */
 .hero {
@@ -178,10 +182,60 @@ button {
     font-weight: 600;
     border-radius: 9999px;
 }
+
 /* End hero section */
 
+/* Start Shopex Offer section */
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #F5F8F7;
+}
+
+.features .row {
+    justify-content: space-between;
+    gap: 29px;
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.features-item .features_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #D5F6F2;
+    flex-shrink: 0;
+}
+
+.features-item .features_img img {
+    width: 24px;
+    height: 24px;
+}
+
+.features-item h3 {
+    color: #121C2A;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.features-item p {
+    padding-top: 2px;
+    color: #3C4A46;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* End Shopex Offer section */
 /* Start media queries */
 @media screen and (min-width:0px) and (max-width:767px) {
+
     .header .list,
     .header .search-form {
         display: none;
@@ -219,6 +273,14 @@ button {
     .hero .hero-rightSide h1 {
         font-size: 22px;
     }
+
+    .features .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -236,6 +298,10 @@ button {
 
     .hero .hero-rightSide h1 {
         font-size: 28px;
+    }
+
+    .features-item {
+        flex: 1;
     }
 }
 
@@ -258,4 +324,5 @@ button {
         width: 250px;
     }
 }
+
 /* End media queries */
