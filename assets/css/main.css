@@ -480,6 +480,87 @@ button {
     cursor: pointer;
 }
 /* End best sellers section */
+
+/* Start pet-profile section */
+.pet-profile {
+    background-color: #F9F9FF;
+    padding: 50px 0;
+}
+
+.pet-profile_box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 48px;
+    background-color: #273140;
+    border-radius: 24px;
+}
+
+.pet-profile_info {
+    flex: 3;
+}
+
+.pet-profile_info h2 {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.pet-profile_info p {
+    padding-top: 16px;
+    color: #D9E3F7;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.pet-profile_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.pet-profile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background-color: #2DD4BF;
+    color: #00574D;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pet-profile-btn:hover {
+    color: #00574D;
+}
+
+.pet-profile-btn.outline {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.pet-profile-btn.outline:hover {
+    background-color: #FFFFFF;
+    color: #273140;
+}
+
+.pet-profile_img {
+    flex: 2;
+}
+
+.pet-profile_img img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+/* End pet-profile section */
+
 /* Start media queries */
 @media screen and (min-width:0px) and (max-width:767px) {
 
@@ -550,6 +631,24 @@ button {
         flex: none;
         width: calc(50% - 15px);
     }
+
+    .pet-profile_box {
+        flex-direction: column;
+        padding: 32px 24px;
+        text-align: center;
+    }
+
+    .pet-profile_info h2 {
+        font-size: 26px;
+    }
+
+    .pet-profile_info p {
+        font-size: 16px;
+    }
+
+    .pet-profile_buttons {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -588,6 +687,14 @@ button {
     .product-card {
         flex: none;
         width: calc(50% - 15px);
+    }
+
+    .pet-profile_box {
+        padding: 32px;
+    }
+
+    .pet-profile_info h2 {
+        font-size: 30px;
     }
 }
 
