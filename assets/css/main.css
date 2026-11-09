@@ -233,6 +233,69 @@ button {
 }
 
 /* End Shopex Offer section */
+
+/* Start categories section */
+.categories {
+    background-color: #F9F9FF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.categories_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 55px;
+}
+
+.categories_title h2 {
+    color: #121C2A;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+.categories_title p {
+    padding-top: 4px;
+    color: #3C4A46;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.categories_title .view-all {
+    color: #006B5F;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.categories .row {
+    gap: 30px;
+}
+
+.categories-item {
+    flex: 1;
+    text-align: center;
+}
+
+.categories_img img {
+    width: 100%;
+    border: 14px solid #E6EEFF;
+    border-radius: 50%;
+}
+
+.categories-item h3 {
+    padding-top: 27px;
+    color: #121C2A;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.categories-item:hover h3 {
+    color: #006B5F;
+}
+/* End categories section */
+
 /* Start media queries */
 @media screen and (min-width:0px) and (max-width:767px) {
 
@@ -281,6 +344,19 @@ button {
         width: fit-content;
         margin: 0 auto;
     }
+
+    .categories_title h2 {
+        font-size: 26px;
+    }
+
+    .categories-item {
+        flex: none;
+        width: calc(50% - 15px);
+    }
+
+    .categories_img img {
+        border-width: 8px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -303,6 +379,14 @@ button {
     .features-item {
         flex: 1;
     }
+
+    .categories_title h2 {
+        font-size: 30px;
+    }
+
+    .categories_img img {
+        border-width: 10px;
+    }
 }
 
 @media screen and (min-width:0px) and (max-width:400px) {
@@ -323,6 +407,10 @@ button {
     .hero img {
         width: 250px;
     }
-}
 
+    .categories-item h3 {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+}
 /* End media queries */
